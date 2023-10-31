@@ -1,0 +1,12 @@
+.charts{
+    display: flex;
+  }
+  .charts div{
+    width: 50%;
+    margin: 1em auto;
+  }
+    #barChart, #puntualidadChart{
+        max-height: 14em;
+        max-width: 90%;
+        margin: 0 auto;
+    }

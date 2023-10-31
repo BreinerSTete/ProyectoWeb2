@@ -1,0 +1,70 @@
+*{
+    scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scrollbar-gutter: stable;
+}
+*::-webkit-scrollbar{
+    width: 10px;
+}
+*::-webkit-scrollbar-track{
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--acentColor);
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+}
+:root{
+    --acentColor: #559e52;
+}
+body{
+    text-align: center;
+}
+#mainSearch{
+    margin-left: 8em;
+    margin-right: 7em;
+}
+.ri-account-circle-fill, .ri-information-fill{
+    color: var(--acentColor);
+}
+.container-fluid{
+    text-align: center;
+    transition: max-height 0.2s ease-in-out;
+}
+footer{
+    text-align: center;
+    padding: 2em;
+}
+
+.contact button{
+    font-size: x-large;
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin: 0.4em;
+    border-radius: 6em;
+    border: none;
+    background-color: #559e52;
+    transition: 0.1s ease-in-out all;
+}
+
+.contact button:hover{
+    filter: saturate(2);
+    
+}
+
+@media (max-width: 625px) {
+    .filters{
+        text-align: center;
+    }
+    #mainSearch{
+        margin: 0;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 2em;
+    }
+    .card-group{
+        padding: 2em;
+    }
+}
