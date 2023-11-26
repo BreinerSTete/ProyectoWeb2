@@ -1,3 +1,10 @@
+<?php
+include 'connection.php';
+session_start();
+if (isset($_SESSION['logged']) && $_SESSION['logged'] == false) {
+  header('Location: ../../');
+}
+?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -7,6 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="../CSS/admin.css">
+  <link rel="shortcut icon" href="../Media/logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- Navigator -->
@@ -14,7 +22,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="rentals.php">
-    <h3><img src="../Assets/logo.png" alt="Logo" style="max-height: 2em;">RentEasy</h3>
+    <h3><img src="../Media/logo.png" alt="Logo" style="max-height: 2em;">RentEasy</h3>
     </a>
   </div>
 </nav>

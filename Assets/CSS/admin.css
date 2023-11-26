@@ -5,8 +5,8 @@
     width: 50%;
     margin: 1em auto;
   }
-    #barChart, #puntualidadChart{
+#barChart, #puntualidadChart{
         max-height: 14em;
         max-width: 90%;
         margin: 0 auto;
-    }
+}

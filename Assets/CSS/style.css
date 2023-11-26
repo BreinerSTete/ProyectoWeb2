@@ -62,12 +62,13 @@ body{
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.container-fluid{
+.container-fluid {
     text-align: center;
-    background-image: url(../Assets/main.jpeg);
-    background-size: cover;
+    background-image: url("../Media/main.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding: 3em;
-    transition: max-height 0.2s ease-in-out;
+    transition: 0.2s ease-in-out all;
 }
 footer{
     text-align: center;
